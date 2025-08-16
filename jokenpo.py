@@ -1,11 +1,18 @@
+#Libraries that helps to randomize the code's option in each game
 from random import randint
 from time import sleep
-opt = ['pedra', 'papel', 'tesoura']
+
+#list with option the code can choose
+
+opt = ['pedra', 'papel', 'tesoura'] 
 print('''Suas opções:
 [ 0 ] PEDRA
 [ 1 ] PAPEL
 [ 2 ] TESOURA''')
-choice = int(input('Qual é a sua jogada? '))
+choice = int(input('Qual é a sua jogada? ')) #player's selection
+
+#tiny animation before results, with a little delay in each phrase
+
 print('JO')
 sleep(1)
 print('KEN')
@@ -13,6 +20,9 @@ sleep(1)
 print('PO!')
 sleep(1)
 print('-=' * 11)
+
+#main part of the code, which analyzes the outputs
+
 if choice > 2:
     print('Escolha uma opção válida.')
     print('-=' * 11)
